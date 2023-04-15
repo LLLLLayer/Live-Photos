@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "311B01CE-BC08-41BF-AD06-8EF35A80774E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1276EDDA-4995-4B94-A97E-4E15666193A5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LivePhotos/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "372"
+            endingLineNumber = "372"
+            landmarkName = "disassemble(livePhoto:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1276EDDA-4995-4B94-A97E-4E15666193A5 - a364493b05f7d61a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in LivePhotos.ViewController.disassemble(livePhoto: __C.PHLivePhoto) -&gt; ()"
+                  moduleName = "LivePhotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bytedance/Downloads/Layer/LivePhoto/LivePhotos/LivePhotos/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "371"
+                  endingLineNumber = "371"
+                  offsetFromSymbolStart = "1228">
+               </Location>
+               <Location
+                  uuid = "1276EDDA-4995-4B94-A97E-4E15666193A5 - ced675679b2e921c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in LivePhotos.ViewController.disassemble(livePhoto: __C.PHLivePhoto) -&gt; ()"
+                  moduleName = "LivePhotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bytedance/Downloads/Layer/LivePhoto/LivePhotos/LivePhotos/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "371"
+                  endingLineNumber = "371"
+                  offsetFromSymbolStart = "492">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BAF73CB-3B10-4861-9EDD-3BD27003EA01"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LivePhotos/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "326"
+            endingLineNumber = "326"
+            landmarkName = "playVideo(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6BAF73CB-3B10-4861-9EDD-3BD27003EA01 - 90b8de16909eed40"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in LivePhotos.ViewController.playVideo(Foundation.URL) -&gt; ()"
+                  moduleName = "LivePhotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bytedance/Downloads/Layer/LivePhoto/LivePhotos/LivePhotos/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "326"
+                  endingLineNumber = "326"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "6BAF73CB-3B10-4861-9EDD-3BD27003EA01 - dfec93f18c902850"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for closure #1 @Sendable () async throws -&gt; () in LivePhotos.ViewController.playVideo(Foundation.URL) -&gt; ()"
+                  moduleName = "LivePhotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bytedance/Downloads/Layer/LivePhoto/LivePhotos/LivePhotos/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "326"
+                  endingLineNumber = "326"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "6BAF73CB-3B10-4861-9EDD-3BD27003EA01 - cb5db5cdc8b6a17e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in LivePhotos.ViewController.playVideo(Foundation.URL) -&gt; ()"
+                  moduleName = "LivePhotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bytedance/Downloads/Layer/LivePhoto/LivePhotos/LivePhotos/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "326"
+                  endingLineNumber = "326"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "6BAF73CB-3B10-4861-9EDD-3BD27003EA01 - 9630e020acd9477f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in LivePhotos.ViewController.playVideo(Foundation.URL) -&gt; ()"
+                  moduleName = "LivePhotos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bytedance/Downloads/Layer/LivePhoto/LivePhotos/LivePhotos/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "326"
+                  endingLineNumber = "326"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5FF8228B-AB47-465C-97A8-B4674E9696F9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LivePhotos/LivePhotos.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "save(_:to:data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
