@@ -4,9 +4,9 @@
 
 本文将介绍 Live Photo 相关技术概念，并使用 Swift 实现 Live Photo 的分解、合成功能。分解和合成的演示如下：
 
-| ![Disassemble](https://raw.githubusercontent.com/LLLLLayer/picture-bed/main/img/LivePhotos/Disassemble.gif) | ![Asemble](https://raw.githubusercontent.com/LLLLLayer/picture-bed/main/img/LivePhotos/Asemble.gif) |
+| ![Disassemble](https://raw.githubusercontent.com/LLLLLayer/Galaxy/main/resources/images/live_photos/Disassemble.gif) | ![Asemble](https://raw.githubusercontent.com/LLLLLayer/Galaxy/main/resources/images/live_photos/Asemble.gif) |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|                将 Live Photo 分解为照片和视频                |                 使用照和视频合成 Live Photo                  |
+|                将 Live Photo 分解为照片和视频                |           使用(不相关的)照片和视频合成 Live Photo            |
 
 > 文章所有涉及的 API 基于 **iOS 16.0+**，使用了较多 Swift 的结构化并发的相关概念，阅读需要有一定基础。
 
@@ -18,8 +18,9 @@
 
 以下是一张曾于武汉大学拍摄的樱花实况照片。我们如果直接将 Live Photo 隔空投送到 Mac，可以得到一张 `HEIC` 格式的照片。但若我们在分享页面，进行**「选项 -> 所有照片数据」**的勾选，那么我们投送后将得到一个文件夹，内部包含一张`HEIC` 格式的照片、一个 `MOV` 格式的视频：
 
-| <img src="https://raw.githubusercontent.com/LLLLLayer/picture-bed/main/img/LivePhotos/LivePhotoGif.gif" alt="LivePhotoGif"  /> | <img src="https://raw.githubusercontent.com/LLLLLayer/picture-bed/main/img/LivePhotos/LivePhotoSave.png" alt="LivePhotoSave" style="zoom:25%;" /> |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+<img src="https://raw.githubusercontent.com/LLLLLayer/Galaxy/main/resources/images/live_photos/LivePhotoGif.gif" alt="LivePhotoGif"  />
+
+<img src="https://raw.githubusercontent.com/LLLLLayer/Galaxy/main/resources/images/live_photos/LivePhotoSave.png" alt="LivePhotoSave" style="zoom:100%;" />
 
 正如我们所见，一张 Live Photo 由配对的两个资源组成，相同的 Identifier 进行配对：
 
@@ -29,7 +30,7 @@
 
 图片拥有属性，对于大多数图像文件格式，使用 [`CGImageSource`](https://developer.apple.com/documentation/imageio/cgimagesource) 类型可以有效地读取数据。可以使用 [The Photo Investigator](https://apps.apple.com/us/app/photo-investigator-view-edit/id571574618) 应用查看照片中的所有 Metadata：
 
-![image-20230410011403546](https://raw.githubusercontent.com/LLLLLayer/picture-bed/main/img/LivePhotos/ThePhotoInvestigator.png)
+![image-20230410011403546](https://raw.githubusercontent.com/LLLLLayer/Galaxy/main/resources/images/live_photos/ThePhotoInvestigator.png)
 
 拍摄照片时，Apple 相机会自动为照片添加不同种类的 Metadata。大多数元数据都很好理解，如位置存储在 GPS Metadata 中、相机信息位于 EXIF Metadata 中。
 
@@ -63,7 +64,7 @@ static let timecode: AVMediaType //The media contains a time code.
 static let video: AVMediaType // The media contains video.
 ```
 
-![image-20230415154610857](https://raw.githubusercontent.com/LLLLLayer/picture-bed/main/img/LivePhotos/image-20230415154610857.png)
+![image-20230415154610857](https://raw.githubusercontent.com/LLLLLayer/Galaxy/main/resources/images/live_photos/image-20230415154610857.png)
 
 `AVAsset` 存储关于其媒体的描述性 Metadata。AVFoundation 通过使 其 `AVMetadataItem ` 类简化了对 Metadata 的处理。最简单的讲，`AVMetadataItem` 的实例是一个键值对，表示单个 Metadata 值，比如电影的标题或专辑的插图。AVFoundation 框架将相关 Metadata 分组到 `keySpace` 中：
 
@@ -824,12 +825,14 @@ func saveButtonDidSelect(_ sender: UIButton) {
 
 ## 参考资料
 
-[1] https://www.apple.com.cn/newsroom/2015/09/09Apple-Introduces-iPhone-6s-iPhone-6s-Plus/
+[1] [Apple Introduces iPhone 6s & iPhone 6s Plus](https://www.apple.com/newsroom/2015/09/09Apple-Introduces-iPhone-6s-iPhone-6s-Plus/)
 
-[2] https://support.apple.com/zh-cn/HT207310
+[2] [Take and edit Live Photos](https://support.apple.com/en-us/HT207310)
 
-[3] https://photoinvestigator.co/blog/the-mystery-of-maker-apple-metadata/
+[3] [What is the “Maker Apple” Metadata in iPhone Photos?](https://photoinvestigator.co/blog/the-mystery-of-maker-apple-metadata/)
 
-[4] https://developer.apple.com/documentation/photokit/displaying_live_photos 
+[4] [Displaying Live Photos](https://developer.apple.com/documentation/photokit/displaying_live_photos)
 
-[5] https://xiaozhuanlan.com/topic/4925736180
+[5] [How to make Live Photo and save it in photo library in iOS.](https://prafullkumar77.medium.com/how-to-make-live-photo-and-save-it-in-photo-library-in-ios-5255cdc2f15d)
+
+[6] [LimitPoint LivePhoto](https://github.com/LimitPoint/LivePhoto)
